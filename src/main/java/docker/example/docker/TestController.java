@@ -14,4 +14,10 @@ public class TestController {
 
         return "this is working: "+name;
     }
+
+    @GetMapping("/")
+    public String getHome() {
+        String name = "Ahmad adawi";
+        return "HOME working: "+name;
+    }
 }
